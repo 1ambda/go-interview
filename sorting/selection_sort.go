@@ -1,10 +1,5 @@
 package sorting
 
-// Space Complexity - O(1)
-// Time Complexity
-// - Worst: 	O(N^2)
-// - Average: 	O(N^2)
-// - Best: 		O(N^2)
 func SelectionSort(arr []int) []int {
 
 	min := 0
