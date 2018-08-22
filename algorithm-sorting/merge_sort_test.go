@@ -5,10 +5,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"sort"
 	"fmt"
+	"github.com/1ambda/go-interview/util"
 )
 
 func TestMergeSort(t *testing.T) {
-	arr := RandomArray(10000000)
+	arr := util.RandomArray(10000000)
 	sorted := MergeSort(arr)
 
 	assert.True(t, sort.IsSorted(sort.IntSlice(sorted)))
