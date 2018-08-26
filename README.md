@@ -20,6 +20,17 @@ Both bubble sort and insertion sort have `Ω(n)` best case time complexity while
     * merge sort is efficient for data doesn't fit into memory and when it's expensive get to an item (single linked list, file)
     * [Why is merge sort preferred over quick sort for sorting linked lists](https://stackoverflow.com/questions/5222730/why-is-merge-sort-preferred-over-quick-sort-for-sorting-linked-lists)
     * stable sort
+    
+## Graph Algorithms
+
+- [ ] DFS
+- [ ] BFS
+- [ ] Minimum Spanning Tree
+- [ ] Prim's Algorithm
+- [ ] Kruskal's Algorithm
+- [ ] Dijkstra Algorithm 
+- [ ] Bellman-Ford Algorithm
+- [ ] Floyd Algorithm
 
 # Credits
 
