@@ -1,4 +1,4 @@
-package solution
+package codility
 
 func Solution(N int) int {
 	if N == 0 {
