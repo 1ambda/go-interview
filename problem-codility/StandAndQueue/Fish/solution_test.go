@@ -7,10 +7,10 @@ import (
 
 func TestSolution(t *testing.T) {
 
-	input := []int{8, 8, 5, 7, 9, 8, 7, 4, 8}
+	fishes := []int{4, 3, 2, 1, 5}
+	directions := []int{0, 1, 0, 0, 0}
 
-	actual := Solution(input)
-	expected := 7
+	actual := Solution(fishes, directions)
+	expected := 2
 	assert.Equal(t, expected, actual)
 }
-
