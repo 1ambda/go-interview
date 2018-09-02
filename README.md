@@ -1,5 +1,14 @@
 # go-interview
 
+## Articles
+
+- Leetcode Patterns
+    * [BST](https://medium.com/leetcode-patterns/leetcode-pattern-0-iterative-traversals-on-trees-d373568eb0ec)
+    * [DFS + BFS Part 1](https://medium.com/leetcode-patterns/leetcode-pattern-1-bfs-dfs-25-of-the-problems-part-1-519450a84353)
+    * [DFS + BFS Part 2](https://medium.com/leetcode-patterns/leetcode-pattern-2-dfs-bfs-25-of-the-problems-part-2-a5b269597f52)
+    * [Sliding Windows for String](https://medium.com/leetcode-patterns/leetcode-pattern-2-sliding-windows-for-strings-e19af105316b)
+    * [Backtracking](https://medium.com/leetcode-patterns/leetcode-pattern-3-backtracking-5d9e5a03dc26)
+
 ## Sorting Algorithms
 
 - [x] Bubble Sort
