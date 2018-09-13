@@ -30,6 +30,14 @@ Both bubble sort and insertion sort have `Ω(n)` best case time complexity while
     * [Why is merge sort preferred over quick sort for sorting linked lists](https://stackoverflow.com/questions/5222730/why-is-merge-sort-preferred-over-quick-sort-for-sorting-linked-lists)
     * stable sort
     
+## Binary Search Tree and Heap
+
+- [x] Binary Search Tree
+    * BST provides `O(logN)` operations: **Access**, **Search**, **Insert**, **Delete**
+    * [Heap vs Binary Search Tree](https://stackoverflow.com/questions/6147242/heap-vs-binary-search-tree-bst)
+- [ ] Self-balanced BST
+- [ ] Heap
+    
 ## Graph Algorithms
 
 - [ ] DFS
