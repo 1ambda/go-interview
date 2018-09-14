@@ -49,6 +49,20 @@ Both bubble sort and insertion sort have `Ω(n)` best case time complexity while
 - [ ] Bellman-Ford Algorithm
 - [ ] Floyd Algorithm
 
+### Graph: Shortest Paths
+
+[Dijkstra vs Bellman-Ford vs Floyd-Warshall](https://cs.stackexchange.com/questions/2942/am-i-right-about-the-differences-between-floyd-warshall-dijkstra-and-bellman-fo)
+
+
+- [ ] Dijkstack sovlves single-source path (SSSP) problem.
+    * can't handle negative edges
+    * un-weighted graphs = BFS
+- [ ] Bellman-Ford solves SSSP if edge weights may be negative.
+- [ ] Floyd-Warshall solves all pairs shortest path (APSP) problem.
+    * can handle both positive and negative edges
+    * but can't handle negative cycles
+
+
 # Credits
 
 - http://bigocheatsheet.com/
