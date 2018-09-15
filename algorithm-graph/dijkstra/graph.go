@@ -1,6 +1,6 @@
 package dijkstra
 
-// Edge struct hold a target vertex and it's weight
+// Neighbor struct hold a target vertex and it's weight
 type Neighbor struct {
 	Destination *Vertex
 	Weight      float64
