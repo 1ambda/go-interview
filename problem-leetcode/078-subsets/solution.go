@@ -1,76 +1,26 @@
 package leetcode
 
-import (
-	"strings"
-	"math"
-)
+func subsets(nums []int) [][]int {
 
-// https://leetcode.com/problems/minimum-window-substring/description/
+	powerset := make([][]int, 0)
+	subset := make([]int, 0)
 
-func minWindow(str string, pattern string) string {
-	if len(strings.TrimSpace(str)) == 0 || len(strings.TrimSpace(pattern)) == 0 {
-		return ""
+	start := 0
+
+	backtrack(nums, start, subset, &powerset)
+
+	return powerset
+}
+
+func backtrack(nums []int, start int, subset []int, powerset *[][]int) {
+	// add current subset to answer
+	tmp := make([]int, len(subset))
+	copy(tmp, subset)
+	*powerset = append(*powerset, tmp)
+
+	for i := 0; i < len(nums); i ++ {
+		subset = append(subset, nums[i])
+		backtrack(nums[i+1:], start+1, subset, powerset)
+		subset = subset[:len(subset)-1]
 	}
-
-	// frequency table
-	table := make(map[string]int)
-
-	for i := range pattern {
-		char := string(pattern[i])
-		table[char]++
-	}
-	counter := len(table)
-
-	solution := ""
-	solutionLen := math.MaxInt64
-
-	begin := 0
-	end := 0
-
-	for end < len(str) {
-		endChar := string(str[end])
-
-		// if end char is in the table
-		if _, ok := table[endChar]; ok {
-			table[endChar]--
-			if table[endChar] == 0 {
-				counter--
-			}
-		}
-
-		end++
-
-		// if found a solution, then move begin to
-		// 1) trim solution
-		// 2) or move begin ahead to find a next solution
-		for counter == 0 {
-
-			// if the current solution is shorter
-			if end-begin < solutionLen {
-				solution = str[begin:end]
-				solutionLen = len(solution)
-			}
-
-			beginChar := string(str[begin])
-
-			// if begin char is NOT in the table, then trim solution
-			// if begin char is in the table, then
-			if _, ok := table[beginChar]; ok {
-				table[beginChar]++
-
-				// remove accumulated the same char.
-				// find the most recent char and increase counter to escape begin loop
-				// then we will start to find a next solution
-				if table[beginChar] > 0 {
-					counter++
-				}
-			}
-
-			begin++
-
-		}
-	}
-
-
-	return solution
 }

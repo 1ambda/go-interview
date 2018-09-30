@@ -7,18 +7,13 @@ import (
 
 func TestSolution(t *testing.T) {
 
-	input1 := []int{1, 2, 3}
+	candidates1 := []int{2, 3, 6, 7}
+	target1 := 7
 	expected1 := [][]int{
-		{3},
-		{1},
-		{2},
-		{1, 2, 3},
-		{1, 3,},
-		{2, 3,},
-		{1, 2,},
-		{},
+		{7,},
+		{2, 2, 3},
 	}
 
-	actual1 := subsets(input1)
+	actual1 := combinationSum(candidates1, target1)
 	assert.ElementsMatch(t, expected1, actual1)
 }
